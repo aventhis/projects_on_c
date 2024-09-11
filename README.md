@@ -4,10 +4,32 @@ This repository contains several projects written in the C programming language.
 
 ## Contents
 
-1. [s21_math](#s21_math)
-2. [s21_string](#s21_string)
-2. [s21_cat](#s21_cat)
-3. [s21_grep](#s21_grep)
+1. [s21_decimal](#s21_decimal)
+2. [s21_math](#s21_math)
+3. [s21_string](#s21_string)
+4. [s21_cat](#s21_cat)
+5. [s21_grep](#s21_grep)
+
+## s21_decimal
+
+The `s21_decimal` project is an implementation of a custom data type `decimal` in C for accurate decimal calculations.
+
+### Key Features
+
+- Implementation of arithmetic operations for decimal numbers such as addition, subtraction, multiplication, and division.
+- Rounding operations, calculating the remainder of division, and changing the sign of a number.
+- Comparison operations: equal, not equal, greater, less, greater or equal, less or equal.
+- Full unit test coverage using the Check library.
+- Generation of code coverage reports using gcov.
+
+### Makefile Targets
+
+- **all**: This target builds the entire project, including compiling all source files and creating executable files.
+- **clean**: This target removes all generated files, such as object files and executables, cleaning the project.
+- **s21_decimal.a**: This target creates the static library `s21_decimal.a` from all project source files.
+- **test**: This target compiles and runs all unit tests to verify the correctness of the library functions.
+- **gcov_report**: This target runs tests with gcov flags and generates a code coverage report in HTML format.
+
 
 ## s21_math
 
