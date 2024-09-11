@@ -39,7 +39,7 @@ s21_covered:
 		ranlib $(LIBNAME)
 
 test: clean $(LIBNAME)
-	$(CC) ${SOURCE} -c $(FLAGS) $(GLFLAGS) ${ADD_LIB}
+	$(CC) ${SOURCE} -c $(FLAGS) $(GLFLAGS) 
 	$(CC) $(TESTS)*.o $(LIBNAME) -o $(TESTS) ${ADD_LIB} $(FLAGS) $(GLFLAGS) 
 
 install:
